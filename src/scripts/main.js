@@ -1,6 +1,6 @@
 'use strict';
 
-const inputs = document.querySelectorAll('input');
+const inputs = document.querySelectorAll('form input');
 const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
 inputs.forEach((input) => {
@@ -16,5 +16,3 @@ inputs.forEach((input) => {
 
   input.parentNode.insertBefore(label, input);
 });
-
-console.log(inputs);
